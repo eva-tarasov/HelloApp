@@ -9,15 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var hellowAppLabel: UILabel!
+    @IBOutlet weak var textButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    // Some changes
     
-    // Enother changes
+    @IBAction func showOrHideText() {
+    }
+    
+
 
 }
 

@@ -14,9 +14,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUy-vr-hth">
+                                <rect key="frame" x="15" y="116" width="345" height="41"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkQ-Ze-Rwo">
+                                <rect key="frame" x="118.5" y="473" width="138" height="61"/>
+                                <color key="backgroundColor" red="0.0" green="0.14006087310000001" blue="0.238836453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="25" minY="15" maxX="25" maxY="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showOrHideText" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgX-uQ-MEq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98374601030154696" green="1" blue="0.89580942184181767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mkQ-Ze-Rwo" secondAttribute="bottom" constant="133" id="6sZ-d2-Wb9"/>
+                            <constraint firstItem="mkQ-Ze-Rwo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fac-Fg-AIG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rUy-vr-hth" secondAttribute="trailing" constant="15" id="VUe-6Z-aKt"/>
+                            <constraint firstItem="rUy-vr-hth" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Vme-sP-rPL"/>
+                            <constraint firstItem="rUy-vr-hth" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="c07-cy-clu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hellowAppLabel" destination="rUy-vr-hth" id="CvC-X7-3sM"/>
+                        <outlet property="textButton" destination="mkQ-Ze-Rwo" id="fKB-7E-lEb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
